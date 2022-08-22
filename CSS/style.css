@@ -21,12 +21,45 @@
     display: flex;
     align-items:center;
     justify-content: center;
-}
-a{
-    text-decoration: none;
+    padding-right: 25px;;
 }
 ul{
     list-style-type: none;
     display:flex;
     gap: 100px;
+}
+.leftBarContainer{
+    display: flex;
+}
+.link, a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color:#c71f37;
+}
+.link::before, .link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width:100%;
+    height:2px;
+    background-color:#e65454;
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+.link::before{
+    top:-3px;
+    transform-origin:left;
+}
+.link::after{
+    bottom: -3px;
+    transform-origin:right;
+}
+.link:hover::before, .link:hover::after{
+    transform: scaleX(1);
+}
+.logoImage{
+    border-radius: 50px;
+    padding:8px;
+    width: 5em;
 }
