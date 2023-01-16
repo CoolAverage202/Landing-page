@@ -118,7 +118,8 @@ span{
     align-items:center;
     margin-left: 17em;
 }
-.bottomContainer{
+/* Different way of doing the footer didnt like it*/
+/* .bottomContainer{
     background-color: lightblue;
     padding:16px;
     border: 4px solid blue;
@@ -155,5 +156,46 @@ span{
 }
 .bottom-header{
     margin-top: 15px;
-}
+} */
 
+.container{
+    background-color:white;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.secondContainer{
+    background-color: darkblue;
+    width: 1000px;
+    height: 140px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+p{
+    margin-top: 10px;
+    line-height:  1.3em;
+    font-size: 1.2em;
+    color:#ffffff;
+}
+.thirdContainer {
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #2d94c8;
+    font-size: 19px;
+    border: 1px solid #2d63c8;
+    border-radius: 7px;
+    padding: 15px 50px;
+    cursor: pointer
+}
+.thirdContainer:hover {
+    color: #2d61c8;
+    background-color: #ffffff;
+}
+.phraseText{
+    color: #000000;
+}
